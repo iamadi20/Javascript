@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airline</title>
+	<script type="text/javascript">
+			var plane={
+				airline:"Air India",
+				number:364,
+				departure:{
+					IATA:"MUM",
+					time:"2019-02-12 23:45",
+					city:"Mumbai"
+				},
+				arrival:{
+					IATA:"NYC",
+					time:"2019-02-14 00:00",
+					city:"New York" 
+				}
+			};
+		
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+	document.writeln("Airways: "+plane.airline+"<br>"+"Number: "+plane.number+"<br>"+"Departure: "+plane.departure.time+"<br>");
+	document.writeln("Arrival: "+plane.arrival.IATA+"<br>"+"City: "+plane.arrival.city+"<br>");
+	var status=plane.status||"(on time)";
+	document.writeln("Status: "+status);
+
+
+</script>
+</body>
+</html>
